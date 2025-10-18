@@ -13,7 +13,7 @@ export const ScrollStrokePath = () => {
       className="mx-auto flex h-[350vh] w-full flex-col items-center overflow-hidden bg-background px-4 text-foreground"
     >
       <div className="relative mt-32 flex w-fit flex-col items-center justify-center gap-5 text-center">
-        <h1 className="relative z-10 text-6xl font-bold tracking-[-0.08em] sm:text-7xl lg:text-9xl">
+        <h1 className="relative z-10 text-6xl font-bold tracking-[-0.08em] text-black sm:text-7xl lg:text-9xl">
           Naveen Nunna <br /> Creative <br />
           Designer
         </h1>
