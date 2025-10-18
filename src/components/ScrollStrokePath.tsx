@@ -29,7 +29,7 @@ export const ScrollStrokePath = () => {
 
       <div className="w-full translate-y-[200vh] rounded-3xl bg-primary pb-10 text-primary-foreground">
         <h1 className="mt-10 text-center text-[15.5vw] font-bold leading-[0.9] tracking-tighter lg:text-[16.6vw]">
-          Naveen Nunna
+          N.M.A.K
         </h1>
         <div className="mt-20 flex w-full flex-col items-start gap-5 px-4 font-medium lg:mt-16 lg:flex-row lg:justify-between">
           <div className="flex w-full items-center justify-between gap-12 uppercase lg:w-fit lg:justify-center">
