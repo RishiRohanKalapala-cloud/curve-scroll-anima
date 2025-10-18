@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { ContactForm } from "./ContactForm";
 
 export const ScrollStrokePath = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -8,50 +9,54 @@ export const ScrollStrokePath = () => {
   });
 
   return (
-    <section
-      ref={ref}
-      className="mx-auto flex h-[350vh] w-full flex-col items-center overflow-hidden bg-background px-4 text-foreground"
-    >
-      <div className="relative mt-32 flex w-fit flex-col items-center justify-center gap-5 text-center">
-        <h1 className="relative z-10 text-6xl font-bold tracking-[-0.08em] text-black sm:text-7xl lg:text-9xl">
-          Naveen Nunna <br /> Creative <br />
-          Designer
-        </h1>
-        <p className="relative z-10 max-w-2xl text-lg font-medium text-muted-foreground sm:text-xl">
-          Crafting exceptional digital experiences through design
-        </p>
+    <>
+      <section
+        ref={ref}
+        className="mx-auto flex h-[350vh] w-full flex-col items-center overflow-hidden bg-background px-4 text-foreground"
+      >
+        <div className="relative mt-32 flex w-fit flex-col items-center justify-center gap-5 text-center">
+          <h1 className="relative z-10 text-6xl font-bold tracking-[-0.08em] text-black sm:text-7xl lg:text-9xl">
+            Naveen Nunna <br /> Creative <br />
+            Designer
+          </h1>
+          <p className="relative z-10 max-w-2xl text-lg font-medium text-muted-foreground sm:text-xl">
+            Crafting exceptional digital experiences through design
+          </p>
 
-        <LinePath
-          className="absolute -right-[40%] top-0 z-0 hidden lg:block"
-          scrollYProgress={scrollYProgress}
-        />
-      </div>
+          <LinePath
+            className="absolute -right-[40%] top-0 z-0 hidden lg:block"
+            scrollYProgress={scrollYProgress}
+          />
+        </div>
 
-      <div className="w-full translate-y-[200vh] rounded-3xl bg-black pb-10 text-primary-foreground">
-        <h1 className="mt-10 text-center text-[15.5vw] font-bold leading-[0.9] tracking-tighter lg:text-[16.6vw]">
-          N.M.A.K
-        </h1>
-        <div className="mt-20 flex w-full flex-col items-start gap-5 px-4 font-medium lg:mt-16 lg:flex-row lg:justify-between">
-          <div className="flex w-full items-center justify-between gap-12 uppercase lg:w-fit lg:justify-center">
-            <p className="w-fit text-sm">
-              Creative Designer <br />
-              Portfolio
-            </p>
-            <p className="w-fit text-right text-sm lg:text-left">
-              2025 <br /> Scroll Experience
-            </p>
-          </div>
-          <div className="flex w-full flex-wrap items-center justify-between gap-12 uppercase lg:w-fit lg:justify-center">
-            <p className="w-fit text-sm">
-              Design <br /> Innovation
-            </p>
-            <p className="w-fit text-right text-sm lg:text-left">
-              Visual <br /> Excellence
-            </p>
+        <div className="w-full translate-y-[200vh] rounded-3xl bg-black pb-10 text-primary-foreground">
+          <h1 className="mt-10 text-center text-[15.5vw] font-bold leading-[0.9] tracking-tighter lg:text-[16.6vw]">
+            N.M.A.K
+          </h1>
+          <div className="mt-20 flex w-full flex-col items-start gap-5 px-4 font-medium lg:mt-16 lg:flex-row lg:justify-between">
+            <div className="flex w-full items-center justify-between gap-12 uppercase lg:w-fit lg:justify-center">
+              <p className="w-fit text-sm">
+                Creative Designer <br />
+                Portfolio
+              </p>
+              <p className="w-fit text-right text-sm lg:text-left">
+                2025 <br /> Scroll Experience
+              </p>
+            </div>
+            <div className="flex w-full flex-wrap items-center justify-between gap-12 uppercase lg:w-fit lg:justify-center">
+              <p className="w-fit text-sm">
+                Design <br /> Innovation
+              </p>
+              <p className="w-fit text-right text-sm lg:text-left">
+                Visual <br /> Excellence
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <ContactForm />
+    </>
   );
 };
 
