@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ContactForm } from "./ContactForm";
+import { TextRollNavigation } from "./TextRollNavigation";
 
 export const ScrollStrokePath = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -27,6 +28,10 @@ export const ScrollStrokePath = () => {
             className="absolute -right-[40%] top-0 z-0 hidden lg:block"
             scrollYProgress={scrollYProgress}
           />
+        </div>
+
+        <div className="w-full translate-y-[80vh]">
+          <TextRollNavigation />
         </div>
 
         <div className="w-full translate-y-[200vh] rounded-3xl bg-black pb-10 text-primary-foreground">
