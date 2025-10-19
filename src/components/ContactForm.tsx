@@ -39,7 +39,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="w-full bg-background pt-12 pb-20 px-4 sm:pt-16 sm:pb-32">
+    <section className="w-full bg-background pt-40 pb-20 px-4 sm:pt-48 sm:pb-32">
       <div className="mx-auto max-w-4xl">
         <div className="mb-12">
           <h2 className="mb-4 text-5xl font-bold tracking-tight text-black sm:text-6xl lg:text-7xl">
